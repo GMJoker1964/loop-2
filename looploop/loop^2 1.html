@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var scout = "<table border = '1' width = '300' cellspacing = '0' cellpading = '3'>";
+    /*for(i = 1; i <= 10; i++){
+        scout += "<tr>";
+        for(j = 1; j <= 10; j++){
+            scout += "<td>" + i * j + "</td>";
+        }
+        scout += "</tr>";
+    }
+    scout += "</table>";
+    document.write(scout);*/
+    var i,j;
+    i = j = 1;
+    while(i <= 10){
+        scout += "<tr>";
+        while (j <= 10){
+            scout += "<td>" + i * j + "</td>";
+            j++;
+        }
+        scout += "</tr>";
+        j = 1;
+        i++;
+    }
+    scout += "</table>";
+    document.write(scout);
+    
+</script>
+</body>
+</html>
